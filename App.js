@@ -1,15 +1,20 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { Header } from './src/components';
-
+import { Provider } from 'react-redux';
+import Store from './src/configureStore'
+import MainApp from './src/components/MainApp';
 
 
 export default class App extends Component {
     render() {
         return (
-            <View>
-                <Header/>
-            </View>
+            <Provider store={Store}>
+                <View
+                style={{marginTop:55,flex:1}}
+                >
+                    <MainApp />
+                </View>
+            </Provider>
         );
     }
 }
