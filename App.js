@@ -1,20 +1,21 @@
+import { View, Text, Button } from 'react-native';
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { types } from './src/actions';
 import { Provider } from 'react-redux';
-import Store from './src/configureStore'
-import MainApp from './src/components/MainApp';
+import {store} from './src/store';
+import InnerComponent from './src/InnerComponent';
 
 
-export default class App extends Component {
+
+// Calling `store.getState()` returns our state object
+export default class App extends React.Component {
     render() {
         return (
-            <Provider store={Store}>
-                <View
-                style={{marginTop:55,flex:1}}
-                >
-                    <MainApp />
-                </View>
+            <Provider store={store}>
+               <InnerComponent/>
             </Provider>
-        );
+        )
     }
 }
+
+

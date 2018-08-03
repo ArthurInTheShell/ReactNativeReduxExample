@@ -1,10 +1,5 @@
-// We speciify the name of the action as a variable
-const ADD_TO_COUNTER = 'ADD_TO_COUNTER'
-
-// This is an action creator, it simply specifies the action.
-// this is what we call to send an action.
-export default addToCounter = () => (
-  {
-    type: ADD_TO_COUNTER
-  }
-);
+// Define action types
+export const types = {
+    INCREMENT: 'INCREMENT',
+    DECREMENT: 'DECREMENT'
+}

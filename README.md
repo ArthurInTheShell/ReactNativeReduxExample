@@ -4,4 +4,6 @@ A sample project following tutorial from:
 
 ~~https://medium.com/react-native-training/bitcoin-ripple-ethereum-price-checker-with-react-native-redux-e9d076037092~~ (the code is broken)
 
-https://medium.com/@pavsidhu/using-redux-with-react-native-9d07381507fe
+~~https://medium.com/@pavsidhu/using-redux-with-react-native-9d07381507fe~~ (Code not complete)
+
+http://www.reactnativeexpress.com/redux (useful)
